@@ -1,0 +1,10 @@
+{
+  "name": "RoadLife",
+  "short_name": "RoadLife",
+  "description": "Find practical places and resources on the road.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7faf8",
+  "theme_color": "#153e35",
+  "icons": []
+}
