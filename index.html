@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#153e35">
+  <meta name="description" content="RoadLife helps travelers find useful places and road resources.">
+  <title>RoadLife</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">⌖</span><span>RoadLife</span></div>
+    <span class="tag">Your road. Your journey.</span>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p class="eyebrow">FIND YOUR NEXT STOP</p>
+      <h1>Make the road feel a little easier.</h1>
+      <p>Explore places and practical resources wherever you travel.</p>
+      <div class="search-row">
+        <label class="sr-only" for="place-search">Search by city, state, or ZIP code</label>
+        <input id="place-search" type="search" placeholder="City, state, or ZIP code">
+        <button id="search-btn">Search</button>
+      </div>
+      <button id="locate-btn" class="location-btn">◎ Use my current location</button>
+      <p id="status" class="status" role="status">Choose a category or search for a place.</p>
+    </section>
+
+    <section class="map-section" aria-label="Map and filters">
+      <div class="section-heading">
+        <div><p class="eyebrow">EXPLORE THE MAP</p><h2>What's nearby?</h2></div>
+        <span class="map-note">Map data © OpenStreetMap</span>
+      </div>
+      <div id="filters" class="filters">
+        <button class="filter active" data-category="all">All</button>
+        <button class="filter" data-category="parking">Overnight parking</button>
+        <button class="filter" data-category="camping">Camping</button>
+        <button class="filter" data-category="showers">Showers</button>
+        <button class="filter" data-category="restrooms">Restrooms</button>
+        <button class="filter" data-category="help">Help & services</button>
+      </div>
+      <div id="map" aria-label="Interactive map"></div>
+      <p class="disclaimer">Important: This starter map does not yet contain a verified RoadLife directory. Map pins and search results must be checked for current access rules, fees, and overnight-stay restrictions before relying on them.</p>
+    </section>
+
+    <section class="promise">
+      <div class="promise-icon">♡</div>
+      <div><h2>Help should be easy to find.</h2><p>RoadLife is being designed to keep essential safety and emergency-resource information accessible without a paid subscription.</p></div>
+    </section>
+  </main>
+
+  <footer><strong>RoadLife</strong><span>Early prototype · Nationwide vision</span></footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
